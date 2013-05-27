@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/****************************************************************************
+**
+** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
+** Contact: http://www.qt-project.org/legal
+**
+** This file is part of Qt Creator.
+**
+** Commercial License Usage
+** Licensees holding valid commercial Qt licenses may use this file in
+** accordance with the commercial license agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and Digia.  For licensing terms and
+** conditions see http://qt.digia.com/licensing.  For further information
+** use the contact form at http://qt.digia.com/contact-us.
+**
+** GNU Lesser General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU Lesser
+** General Public License version 2.1 as published by the Free Software
+** Foundation and appearing in the file LICENSE.LGPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU Lesser General Public License version 2.1 requirements
+** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+**
+** In addition, as a special exception, Digia gives you certain additional
+** rights.  These rights are described in the Digia Qt LGPL Exception
+** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
+**
+****************************************************************************/
+
+-->
+<wizard version="1" kind="project"
+        class="qt4project" firstpage="10"
+        id="A.RsaAppNoGui" category="B.Rohde-Schwarz">
+    <icon>console.png</icon>
+    <description>Creates a VNA automation application using the RsaToolbox framework without a User Interface.</description>
+    <displayname>Rsa App - No UI</displayname>;
+    <displaycategory>Rohde &amp; Schwarz America</displaycategory>
+    <files>
+    		<!-- Icons -->
+    		<file source="RS.ico" openeditor="false" binary="true" />
+    		<file source="Resources.qrc" openeditor="false" />
+    		<file source="VS2010Resources.rc" openeditor="false" />
+    		<!-- RsaToolbox -->
+    		<file source="./RsaToolbox/rsib.h" target="./RsaToolbox/rsib.h" openeditor="false" />
+    		<file source="./RsaToolbox/rsib32.lib" target="./RsaToolbox/rsib32.lib" openeditor="false" binary="true" />
+    		<file source="./RsaToolbox/rsib32.dll" target="rsib32.dll" openeditor="false" binary="true" />
+    		<file source="./RsaToolbox/visa.h" target="./RsaToolbox/visa.h" openeditor="false" />
+    		<file source="./RsaToolbox/visatype.h" target="./RsaToolbox/visatype.h" openeditor="false" />
+    		<file source="./RsaToolbox/Definitions.h" target="./RsaToolbox/Definitions.h" openeditor="false" />
+    		<file source="./RsaToolbox/General.h" target="./RsaToolbox/General.h" openeditor="false" />
+    		<file source="./RsaToolbox/General.cpp" target="./RsaToolbox/General.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/Key.h" target="./RsaToolbox/Key.h" openeditor="false" />
+    		<file source="./RsaToolbox/Log.h" target="./RsaToolbox/Log.h" openeditor="false" />
+    		<file source="./RsaToolbox/Log.cpp" target="./RsaToolbox/Log.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/GenericBus.h" target="./RsaToolbox/GenericBus.h" openeditor="false" />
+    		<file source="./RsaToolbox/GenericBus.cpp" target="./RsaToolbox/GenericBus.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/RsibBus.h" target="./RsaToolbox/RsibBus.h" openeditor="false" />
+    		<file source="./RsaToolbox/RsibBus.cpp" target="./RsaToolbox/RsibBus.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/VisaBus.h" target="./RsaToolbox/VisaBus.h" openeditor="false" />
+    		<file source="./RsaToolbox/VisaBus.cpp" target="./RsaToolbox/VisaBus.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/TraceData.h" target="./RsaToolbox/TraceData.h" openeditor="false" />
+    		<file source="./RsaToolbox/TraceData.cpp" target="./RsaToolbox/TraceData.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/NetworkData.h" target="./RsaToolbox/NetworkData.h" openeditor="false" />
+    		<file source="./RsaToolbox/NetworkData.cpp" target="./RsaToolbox/NetworkData.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/Touchstone.h" target="./RsaToolbox/Touchstone.h" openeditor="false" />
+    		<file source="./RsaToolbox/Touchstone.cpp" target="./RsaToolbox/Touchstone.cpp" openeditor="false" />
+    		<file source="./RsaToolbox/Vna.h" target="./RsaToolbox/Vna.h" openeditor="false" />
+    		<file source="./RsaToolbox/Vna.cpp" target="./RsaToolbox/Vna.cpp" openeditor="false" />
+    		<!-- WiX Installer -->
+    		<file source="./Installer/Settings/APP_FOLDER_WIZARD" target="./Installer/Settings/APP_FOLDER_WIZARD" openeditor="false" />
+    		<file source="./Installer/Settings/APPLICATION_NAME_WIZARD" target="./Installer/Settings/APPLICATION_NAME_WIZARD" openeditor="false" />
+    		<file source="./Installer/RS_Banner.bmp" target="./Installer/RS_Banner.bmp" openeditor="false" binary="true" />
+    		<file source="./Installer/RS_Dialog.bmp" target="./Installer/RS_Dialog.bmp" openeditor="false" binary="true" />
+    		<file source="./Installer/RS.ico" target="./Installer/RS.ico" openeditor="false" binary="true" />
+    		<file source="./Installer/License.rtf" target="./Installer/License.rtf" openeditor="false" binary="true" />
+    		<file source="./Installer/License.txt" target="./Installer/License.txt" openeditor="false" binary="true" />
+    		<file source="./Installer/Product.wxs" target="./Installer/Product.wxs" openeditor="false" binary="true" />
+    		<!-- Project source -->
+    		<file source="DEBUG_LOGFILE.txt" openeditor="false" />
+    		<file source="Settings.h" openeditor="true" />
+        <file source="main.cpp" openeditor="true" />
+        <file source="project.pro" target="%ProjectName%.pro" openproject="true" />
+    </files>
+    <!-- Create a 2nd wizard page with parameters -->
+    <fieldpagetitle>RsaToolbox Settings</fieldpagetitle>
+    <fields>
+        <field mandatory="true" name="APPLICATION_NAME">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="My RSA App" />
+            <fielddescription>Application Name:</fielddescription>
+        </field>
+        <field mandatory="true" name="APP_FOLDER">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="My RSA App" />
+            <fielddescription>Installation folder name:</fielddescription>
+        </field>
+        <field mandatory="true" name="LOG_FILENAME">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="My RSA App Log.txt" />
+            <fielddescription>Log filename:</fielddescription>
+        </field>
+    </fields>
+</wizard>
