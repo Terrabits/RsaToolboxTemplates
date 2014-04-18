@@ -1,0 +1,75 @@
+
+
+// %ProjectName%
+#include "Settings.h"
+
+// RsaToolbox
+#include "Log.h"
+#include "Vna.h"
+#include "Key.h"
+using namespace RsaToolbox;
+
+// Qt
+#include <QString>
+#include <QApplication>
+#include <QMessageBox>
+
+
+bool isNoConnection(Vna &vna);
+bool isUnknownModel(Vna &vna);
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+
+    Log log(LOG_PATH, LOG_FILENAME, APP_NAME, APP_VERSION);
+    log.printApplicationHeader();
+    
+    Vna vna(CONNECTION_TYPE,
+            INSTRUMENT_ADDRESS,
+            TIMEOUT_MS);
+    vna.useLog(&log);
+    vna.printInfo();
+    
+    Key key(KEY_PATH);
+
+    if (isNoConnection(vna) || isUnknownModel(vna))
+        return(0);
+
+    
+    //////////////////////////////////////
+    //
+    // YOUR CODE GOES HERE
+    //
+    //////////////////////////////////////
+
+
+    return(0);
+}
+
+
+bool isNoConnection(Vna &vna) {
+    if (vna.isDisconnected()) {
+        QString error_message
+            = "Instrument not found. Please run this application on a Rohde & Schwarz VNA.";
+        QMessageBox::critical(NULL,
+                              "%APPLICATION_NAME%",
+                              error_message);
+        vna.print(error_message);
+        return(true);
+    }
+    else
+        return(false);
+}
+bool isUnknownModel(Vna &vna) {
+    if (vna.properties().isUnknownModel()) {
+        QString error_message(QString("VNA not recognized.\n")
+                            + "Please use %APPLICATION_NAME% with a Rohde & Schwarz instrument");
+        QMessageBox::critical(NULL,
+                              "%APPLICATION_NAME%",
+                              error_message);
+        vna.print(error_message);
+        return(true);
+    }
+    else
+        return(false);
+}
