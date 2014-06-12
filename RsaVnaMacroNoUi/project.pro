@@ -13,26 +13,21 @@
 #-------------------------------------------------
 
 
-QT      += core gui
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+QT      += core
 TARGET = %ProjectName%
 TEMPLATE = app
 
-include(RsaToolbox/base.pri)
-include(RsaToolbox/Bus/Rsib/rsib.pri)
-include(RsaToolbox/Bus/Visa/visa.pri)
-include(RsaToolbox/Instruments/Vna/vna.pri)
-include(QCustomPlot/qcustomplot.pri)
+include(RsaToolbox/rsatoolbox.pri)
+include(RsaToolbox/QuaZip/quazip.pri)
 
 SOURCES +=  main.cpp
 HEADERS  += Settings.h
+INCLUDEPATH += $$PWD
 RESOURCES += Resources.qrc
-OTHER_FILES += VS2010Resources.rc \
-               DEBUG_LOGFILE.txt
-
-DEFINES += SOURCE_DIR=\\\"$$PWD\\\"
-CONFIG(debug, debug|release):DEFINES += DEBUG_MODE
-
 win32: RC_FILE = VS2010Resources.rc
+OTHER_FILES += DEBUG_LOGFILE.txt
+
+CONFIG(release, debug|release):DEFINES+=QT_NO_DEBUG_OUTPUT
+DEFINES += SOURCE_DIR=\\\"$$PWD\\\"
+CONFIG(debug, debug|release):DEFINES+=DEBUG_MODE
 win32: LIBS += -L$$PWD/
