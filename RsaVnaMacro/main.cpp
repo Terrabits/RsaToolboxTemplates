@@ -25,9 +25,7 @@ int main(int argc, char *argv[])
     Log log(LOG_PATH, LOG_FILENAME, APP_NAME, APP_VERSION);
     log.printApplicationHeader();
     
-    Vna vna(CONNECTION_TYPE,
-            INSTRUMENT_ADDRESS,
-            TIMEOUT_MS);
+    Vna vna(CONNECTION_TYPE, INSTRUMENT_ADDRESS);
     vna.useLog(&log);
     vna.printInfo();
     

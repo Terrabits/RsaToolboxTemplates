@@ -31,7 +31,7 @@
 
 -->
 <wizard version="1" kind="project"
-    class="qt4project" firstpage="10"
+    class="qmakeproject" firstpage="10"
     id="C.VnaMacroNoUi" category="B.Rohde-Schwarz">
     <icon>console.png</icon>
     <description>Creates an on-instrument VNA application without a user interface.</description>
@@ -41,9 +41,9 @@
       <!-- RsaToolbox -->
       <file source="RsaToolbox/rsatoolbox.pri" target="RsaToolbox/rsatoolbox.pri" openeditor="false" />
       <file source="RsaToolbox/rsatoolbox.pro" target="RsaToolbox/rsatoolbox.pro" openeditor="false" />
-      <file source="RsaToolbox/RsaToolbox.lib" target="RsaToolbox/RsaToolbox.lib" openeditor="false" />
-      <file source="RsaToolbox/RsaToolboxd.lib" target="RsaToolbox/RsaToolboxd.lib" openeditor="false" />
-      <file source="RsaToolbox/rsatoolboxd.pdb" target="RsaToolbox/rsatoolboxd.pdb" openeditor="false" />
+      <file source="RsaToolbox/RsaToolbox.lib" target="RsaToolbox/RsaToolbox.lib" openeditor="false" binary="true" />
+      <file source="RsaToolbox/RsaToolboxd.lib" target="RsaToolbox/RsaToolboxd.lib" openeditor="false" binary="true"/>
+      <file source="RsaToolbox/rsatoolboxd.pdb" target="RsaToolbox/rsatoolboxd.pdb" openeditor="false" binary="true"/>
       
       <!-- RsaToolbox::Icons -->
       <file source="RS.ico" openeditor="false" binary="true" />
@@ -248,14 +248,14 @@
       <file source="RsaToolbox/QuaZIP/ZLib/USAGE.txt" target="RsaToolbox/QuaZIP/ZLib/USAGE.txt" openeditor="false" />
       
       <!-- Rsa Create Installer (WiX) -->
-      <file source="Installer/Settings/APP_FOLDER_WIZARD" target="Installer/Settings/APP_FOLDER_WIZARD" openeditor="false" />
-      <file source="Installer/Settings/APPLICATION_NAME_WIZARD" target="Installer/Settings/APPLICATION_NAME_WIZARD" openeditor="false" />
-      <file source="Installer/RS_Banner.bmp" target="Installer/RS_Banner.bmp" openeditor="false" binary="true" />
-      <file source="Installer/RS_Dialog.bmp" target="Installer/RS_Dialog.bmp" openeditor="false" binary="true" />
-      <file source="Installer/RS.ico" target="Installer/RS.ico" openeditor="false" binary="true" />
-      <file source="Installer/License.rtf" target="Installer/License.rtf" openeditor="false" binary="true" />
-      <file source="Installer/License.txt" target="Installer/License.txt" openeditor="false" binary="true" />
-      <file source="Installer/Product.wxs" target="Installer/Product.wxs" openeditor="false" binary="true" />
+      <file source="RsaToolbox/Installer/Settings/APP_FOLDER_WIZARD" target="Installer/Settings/APP_FOLDER_WIZARD" openeditor="false" />
+      <file source="RsaToolbox/Installer/Settings/APPLICATION_NAME_WIZARD" target="Installer/Settings/APPLICATION_NAME_WIZARD" openeditor="false" />
+      <file source="RsaToolbox/Installer/RS_Banner.bmp" target="Installer/RS_Banner.bmp" openeditor="false" binary="true" />
+      <file source="RsaToolbox/Installer/RS_Dialog.bmp" target="Installer/RS_Dialog.bmp" openeditor="false" binary="true" />
+      <file source="RsaToolbox/Installer/RS.ico" target="Installer/RS.ico" openeditor="false" binary="true" />
+      <file source="RsaToolbox/Installer/License.rtf" target="Installer/License.rtf" openeditor="false" binary="true" />
+      <file source="RsaToolbox/Installer/License.txt" target="Installer/License.txt" openeditor="false" binary="true" />
+      <file source="RsaToolbox/Installer/Product.wxs" target="Installer/Product.wxs" openeditor="false" binary="true" />
       
       <!-- Project source -->
       <file source="./Keys/Debug keys go here" target="./Keys/Debug keys go here" openeditor="false" binary="true" />
