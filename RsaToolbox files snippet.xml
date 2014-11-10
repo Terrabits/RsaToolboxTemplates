@@ -1,14 +1,13 @@
+
+
 <!-- RsaToolbox -->
 <file source="RsaToolbox/rsatoolbox.pri" target="RsaToolbox/rsatoolbox.pri" openeditor="false" />
-<file source="RsaToolbox/rsatoolbox.pro" target="RsaToolbox/rsatoolbox.pro" openeditor="false" />
 <file source="RsaToolbox/RsaToolbox.lib" target="RsaToolbox/RsaToolbox.lib" openeditor="false" />
 <file source="RsaToolbox/RsaToolboxd.lib" target="RsaToolbox/RsaToolboxd.lib" openeditor="false" />
 <file source="RsaToolbox/rsatoolboxd.pdb" target="RsaToolbox/rsatoolboxd.pdb" openeditor="false" />
-
-<!-- RsaToolbox::Icons -->
-<file source="RS.ico" openeditor="false" binary="true" />
-<file source="Resources.qrc" openeditor="false" />
-<file source="VS2010Resources.rc" openeditor="false" />
+<file source="RsaToolbox/core.pri" target="RsaToolbox/core.pri" openeditor="false" />
+<file source="RsaToolbox/rsatoolbox.pro" target="RsaToolbox/rsatoolbox.pro" openeditor="false" />
+<file source="RsaToolbox/rebuild_all.pro" target="RsaToolbox/rebuild_all.pro" openeditor="false" />
 
 <!-- RsaToolbox::Licenses -->
 <file source="RsaToolbox/Licenses/Microsoft Visual C++ 2010 License.txt" target="RsaToolbox/Licenses/Microsoft Visual C++ 2010 License.txt" openeditor="false" />
@@ -17,6 +16,11 @@
 <file source="RsaToolbox/Licenses/QuaZip - GNU General Public License v2.1.txt" target="RsaToolbox/Licenses/QuaZip - GNU General Public License v2.1.txt" openeditor="false" />
 <file source="RsaToolbox/Licenses/R&amp;S Terms and Conditions for Royalty-Free Products.txt" target="RsaToolbox/Licenses/R&amp;S Terms and Conditions for Royalty-Free Products.txt" openeditor="false" />
 <file source="RsaToolbox/Licenses/ZLib Copyright and Terms and Conditions.txt" target="RsaToolbox/Licenses/ZLib Copyright and Terms and Conditions.txt" openeditor="false" />
+
+<!-- RsaToolbox::Icons -->
+<file source="RS.ico" openeditor="false" binary="true" />
+<file source="Resources.qrc" openeditor="false" />
+<file source="VS2010Resources.rc" openeditor="false" />
 
 <!-- RsaToolbox::General -->
 <file source="RsaToolbox/General/BalancedPort.h" target="RsaToolbox/General/BalancedPort.h" openeditor="false" />
@@ -31,6 +35,12 @@
 <file source="RsaToolbox/General/Key.h" target="RsaToolbox/General/Key.h" openeditor="false" />
 <file source="RsaToolbox/General/NameLabel.h" target="RsaToolbox/General/NameLabel.h" openeditor="false" />
 <file source="RsaToolbox/General/NameLabel.cpp" target="RsaToolbox/General/NameLabel.cpp" openeditor="false" />
+<file source="RsaToolbox/General/FormattedComplex.cpp" target="RsaToolbox/General/FormattedComplex.cpp" openeditor="false" />
+<file source="RsaToolbox/General/FormattedComplex.h" target="RsaToolbox/General/FormattedComplex.h" openeditor="false" />
+<file source="RsaToolbox/General/FormattedNetworkData.cpp" target="RsaToolbox/General/FormattedNetworkData.cpp" openeditor="false" />
+<file source="RsaToolbox/General/FormattedNetworkData.h" target="RsaToolbox/General/FormattedNetworkData.h" openeditor="false" />
+<file source="RsaToolbox/General/FormattedTouchstone.cpp" target="RsaToolbox/General/FormattedTouchstone.cpp" openeditor="false" />
+<file source="RsaToolbox/General/FormattedTouchstone.h" target="RsaToolbox/General/FormattedTouchstone.h" openeditor="false" />
 <file source="RsaToolbox/General/NetworkTraceData.h" target="RsaToolbox/General/NetworkTraceData.h" openeditor="false" />
 <file source="RsaToolbox/General/NetworkTraceData.cpp" target="RsaToolbox/General/NetworkTraceData.cpp" openeditor="false" />
 <file source="RsaToolbox/General/NetworkData.h" target="RsaToolbox/General/NetworkData.h" openeditor="false" />
@@ -42,10 +52,37 @@
 <file source="RsaToolbox/General/Touchstone.h" target="RsaToolbox/General/Touchstone.h" openeditor="false" />
 <file source="RsaToolbox/General/Touchstone.cpp" target="RsaToolbox/General/Touchstone.cpp" openeditor="false" />
 
-<!-- RsaToolbox::GUI -->
-<file source="RsaToolbox/GUI/gui.pri" target="RsaToolbox/GUI/gui.pri" openeditor="false" />
-<file source="RsaToolbox/GUI/PortsLineEdit.cpp" target="RsaToolbox/GUI/PortsLineEdit.cpp" openeditor="false" />
-<file source="RsaToolbox/GUI/PortsLineEdit.h" target="RsaToolbox/GUI/PortsLineEdit.h" openeditor="false" />
+<!-- RsaToolbox::Gui -->
+<file source="RsaToolbox/Gui/gui.pri" target="RsaToolbox/Gui/gui.pri" openeditor="false" />
+<file source="RsaToolbox/Gui/ConnectButton/ConnectButton.cpp" target="RsaToolbox/Gui/ConnectButton/ConnectButton.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/ConnectButton/ConnectButton.h" target="RsaToolbox/Gui/ConnectButton/ConnectButton.h" openeditor="false" />
+<file source="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.cpp" target="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.h" target="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.h" openeditor="false" />
+<file source="RsaToolbox/Gui/ErrorLabel/ErrorLabel.cpp" target="RsaToolbox/Gui/ErrorLabel/ErrorLabel.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/ErrorLabel/ErrorLabel.h" target="RsaToolbox/Gui/ErrorLabel/ErrorLabel.h" openeditor="false" />
+<file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" openeditor="false" />
+<file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" openeditor="false" />
+<file source="RsaToolbox/Gui/LastPath/LastPath.cpp" target="RsaToolbox/Gui/LastPath/LastPath.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/LastPath/LastPath.h" target="RsaToolbox/Gui/LastPath/LastPath.h" openeditor="false" />
+<file source="RsaToolbox/Gui/ListPanel/ListPanel.cpp" target="RsaToolbox/Gui/ListPanel/ListPanel.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/ListPanel/ListPanel.h" target="RsaToolbox/Gui/ListPanel/ListPanel.h" openeditor="false" />
+<file source="RsaToolbox/Gui/ListPanel/ListPanel.ui" target="RsaToolbox/Gui/ListPanel/ListPanel.ui" openeditor="false" />
+<file source="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.cpp" target="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.h" target="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.h" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/BreadCrumbs.cpp" target="RsaToolbox/Gui/Wizard/BreadCrumbs.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/BreadCrumbs.h" target="RsaToolbox/Gui/Wizard/BreadCrumbs.h" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/BreadCrumbs.ui" target="RsaToolbox/Gui/Wizard/BreadCrumbs.ui" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/Wizard.cpp" target="RsaToolbox/Gui/Wizard/Wizard.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/Wizard.h" target="RsaToolbox/Gui/Wizard/Wizard.h" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/Wizard.ui" target="RsaToolbox/Gui/Wizard/Wizard.ui" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/WizardButtons.cpp" target="RsaToolbox/Gui/Wizard/WizardButtons.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/WizardButtons.h" target="RsaToolbox/Gui/Wizard/WizardButtons.h" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/WizardButtons.ui" target="RsaToolbox/Gui/Wizard/WizardButtons.ui" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/WizardPage.cpp" target="RsaToolbox/Gui/Wizard/WizardPage.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/WizardPage.h" target="RsaToolbox/Gui/Wizard/WizardPage.h" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/RS.ico" target="RsaToolbox/Gui/Wizard/RS.ico" openeditor="false" />
+<file source="RsaToolbox/Gui/Wizard/WizardResources.qrc" target="RsaToolbox/Gui/Wizard/WizardResources.qrc" openeditor="false" />
 
 <!-- RsaToolbox::Log -->
 <file source="RsaToolbox/Log/Log.h" target="RsaToolbox/Log/Log.h" openeditor="false" />
@@ -63,12 +100,18 @@
 <file source="RsaToolbox/Bus/Rsib/RsibBus.h" target="RsaToolbox/Bus/Rsib/RsibBus.h" openeditor="false" />
 <file source="RsaToolbox/Bus/Rsib/RsibBus.cpp" target="RsaToolbox/Bus/Rsib/RsibBus.cpp" openeditor="false" />
 
+<!-- RsaToolbox::TcpBus -->
+<file source="RsaToolbox/Bus/Tcp/tcp.pri" target="RsaToolbox/Bus/Tcp/tcp.pri" openeditor="false" />
+<file source="RsaToolbox/Bus/Tcp/TcpBus.h" target="RsaToolbox/Bus/Tcp/TcpBus.h" openeditor="false" />
+<file source="RsaToolbox/Bus/Tcp/TcpBus.cpp" target="RsaToolbox/Bus/Tcp/TcpBus.cpp" openeditor="false" />
+
 <!-- RsaToolbox::VisaBus -->
 <file source="RsaToolbox/Bus/Visa/visa.pri" target="RsaToolbox/Bus/Visa/visa.pri" openeditor="false" />
 <file source="RsaToolbox/Bus/Visa/visa.h" target="RsaToolbox/Bus/Visa/visa.h" openeditor="false" />
 <file source="RsaToolbox/Bus/Visa/visatype.h" target="RsaToolbox/Bus/Visa/visatype.h" openeditor="false" />
 <file source="RsaToolbox/Bus/Visa/VisaBus.h" target="RsaToolbox/Bus/Visa/VisaBus.h" openeditor="false" />
 <file source="RsaToolbox/Bus/Visa/VisaBus.cpp" target="RsaToolbox/Bus/Visa/VisaBus.cpp" openeditor="false" />
+<file source="RsaToolbox/Bus/Visa/RsVisa32.dll" target="RsaToolbox/Bus/Visa/RsVisa32.dll" openeditor="false" />
 
 <!-- RsaToolbox::GenericInstrument -->
 <file source="RsaToolbox/Instruments/GenericInstrument.h" target="RsaToolbox/Instruments/GenericInstrument.h" openeditor="false" />
@@ -134,9 +177,10 @@
 <file source="RsaToolbox/Instruments/Vna/VnaUserDefinedPort.cpp" target="RsaToolbox/Instruments/Vna/VnaUserDefinedPort.cpp" openeditor="false" />
 
 <!-- RsaToolbox::Vna/Dialogs -->
-<file source="RsaToolbox/Instruments/Vna/Dialogs/getCalibrationDialog.h" target="RsaToolbox/Instruments/Vna/Dialogs/getCalibrationDialog.h" openeditor="false" />
-<file source="RsaToolbox/Instruments/Vna/Dialogs/getCalibrationDialog.cpp" target="RsaToolbox/Instruments/Vna/Dialogs/getCalibrationDialog.cpp" openeditor="false" />
-<file source="RsaToolbox/Instruments/Vna/Dialogs/getCalibrationDialog.ui" target="RsaToolbox/Instruments/Vna/Dialogs/getCalibrationDialog.ui" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Dialogs/vnadialogs.pri" target="RsaToolbox/Instruments/Vna/Dialogs/vnadialogs.pri" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.h" target="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.cpp" target="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.ui" target="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.ui" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog.h" target="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog.h" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog.cpp" target="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog.ui" target="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog.ui" openeditor="false" />
@@ -144,10 +188,32 @@
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getPortsDialog.cpp" target="RsaToolbox/Instruments/Vna/Dialogs/getPortsDialog.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getPortsDialog.ui" target="RsaToolbox/Instruments/Vna/Dialogs/getPortsDialog.ui" openeditor="false" />
 
+<!-- RsaToolbox::Vna/Files -->
+<file source="RsaToolbox/Instruments/Vna/Files/ZNB_DELETE.cal" target="RsaToolbox/Instruments/Vna/Files/ZNB_DELETE.cal" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Files/ZVA_DELETE.cal" target="RsaToolbox/Instruments/Vna/Files/ZVA_DELETE.cal" openeditor="false" />
+
+<!-- RsaToolbox::Vna/Models -->
+<file source="RsaToolbox/Instruments/Vna/Models/vnamodels.pri" target="RsaToolbox/Instruments/Vna/Models/vnamodels.pri" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Models/VnaModel/VnaModel.h" target="RsaToolbox/Instruments/Vna/Models/VnaModel/VnaModel.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Models/VnaModel/VnaModel.cpp" target="RsaToolbox/Instruments/Vna/Models/VnaModel/VnaModel.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Models/ChannelsModel/ChannelsModel.h" target="RsaToolbox/Instruments/Vna/Models/ChannelsModel/ChannelsModel.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Models/ChannelsModel/ChannelsModel.cpp" target="RsaToolbox/Instruments/Vna/Models/ChannelsModel/ChannelsModel.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Models/CalGroupsModel/CalGroupsModel.h" target="RsaToolbox/Instruments/Vna/Models/CalGroupsModel/CalGroupsModel.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Models/CalGroupsModel/CalGroupsModel.cpp" target="RsaToolbox/Instruments/Vna/Models/CalGroupsModel/CalGroupsModel.cpp" openeditor="false" />
+
+<!-- RsaToolbox::Vna/Views -->
+<file source="RsaToolbox/Instruments/Vna/Views/vnaviews.pri" target="RsaToolbox/Instruments/Vna/Views/vnaviews.pri" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Views/VnaForm/VnaForm.h" target="RsaToolbox/Instruments/Vna/Views/VnaForm/VnaForm.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Views/VnaForm/VnaForm.cpp" target="RsaToolbox/Instruments/Vna/Views/VnaForm/VnaForm.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Views/VnaForm/VnaForm.ui" target="RsaToolbox/Instruments/Vna/Views/VnaForm/VnaForm.ui" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.h" target="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.cpp" target="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.ui" target="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.ui" openeditor="false" />
+
 <!-- QCustomPlot -->
-<file source="RsaToolbox/QCustomPlot/Figure.h" target="RsaToolbox/QCustomPlot/Figure.h" openeditor="false" />
-<file source="RsaToolbox/QCustomPlot/Figure.cpp" target="RsaToolbox/QCustomPlot/Figure.cpp" openeditor="false" />
-<file source="RsaToolbox/QCustomPlot/Figure.ui" target="RsaToolbox/QCustomPlot/Figure.ui" openeditor="false" />
+<file source="RsaToolbox/QCustomPlot/Figure/Figure.h" target="RsaToolbox/QCustomPlot/Figure/Figure.h" openeditor="false" />
+<file source="RsaToolbox/QCustomPlot/Figure/Figure.cpp" target="RsaToolbox/QCustomPlot/Figure/Figure.cpp" openeditor="false" />
+<file source="RsaToolbox/QCustomPlot/Figure/Figure.ui" target="RsaToolbox/QCustomPlot/Figure/Figure.ui" openeditor="false" />
 <file source="RsaToolbox/QCustomPlot/qcustomplot.pri" target="RsaToolbox/QCustomPlot/qcustomplot.pri" openeditor="false" />
 <file source="RsaToolbox/QCustomPlot/qcustomplot.pro" target="RsaToolbox/QCustomPlot/qcustomplot.pro" openeditor="false" />
 <file source="RsaToolbox/QCustomPlot/qcustomplot.h" target="RsaToolbox/QCustomPlot/qcustomplot.h" openeditor="false" />

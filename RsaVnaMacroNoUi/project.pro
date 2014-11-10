@@ -13,21 +13,23 @@
 #-------------------------------------------------
 
 
-QT      += core
-TARGET = %ProjectName%
-TEMPLATE = app
+QT          += core gui widgets
+TARGET       = %ProjectName%
+TEMPLATE     = app
 
 include(RsaToolbox/rsatoolbox.pri)
 #include(RsaToolbox/QuaZip/quazip.pri)
 
-SOURCES +=  main.cpp
-HEADERS  += Settings.h
+HEADERS     += Settings.h
 INCLUDEPATH += $$PWD
-LIBS += -L$$PWD/
-RESOURCES += Resources.qrc
+SOURCES     += main.cpp
+FORMS       += 
+RESOURCES   += Resources.qrc
 OTHER_FILES += DEBUG_LOGFILE.txt
-win32: RC_FILE = VS2010Resources.rc
 
-CONFIG(release, debug|release):DEFINES+=QT_NO_DEBUG_OUTPUT
-DEFINES += SOURCE_DIR=\\\"$$PWD\\\"
-CONFIG(debug, debug|release):DEFINES+=DEBUG_MODE
+DEFINES     += SOURCE_DIR=\\\"$$PWD\\\"
+CONFIG(debug, debug|release):DEFINES += DEBUG_MODE
+CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG_OUTPUT
+
+LIBS        += -L$$PWD/
+win32: RC_FILE = VS2010Resources.rc
