@@ -12,8 +12,8 @@ using namespace RsaToolbox;
 #include <QMessageBox>
 
 
-MainWindow::MainWindow(Vna &vna, Key &key, QWidget *parent) : 
-    vna(vna), key(key),
+MainWindow::MainWindow(Vna &vna, Keys &keys, QWidget *parent) : 
+    vna(vna), keys(keys),
     QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);

@@ -3,7 +3,7 @@
 
 
 // RsaToolbox
-#include "Key.h"
+#include "Keys.h"
 #include "Vna.h"
 
 // Qt
@@ -19,13 +19,13 @@ class MainWindow : public QMainWindow
     Q_OBJECT
     
 public:
-    explicit MainWindow(RsaToolbox::Vna &vna, RsaToolbox::Key &key, QWidget *parent = 0);
+    explicit MainWindow(RsaToolbox::Vna &vna, RsaToolbox::Keys &keys, QWidget *parent = 0);
     ~MainWindow();
     
 private:
     Ui::MainWindow *ui;
     RsaToolbox::Vna &vna;
-    RsaToolbox::Key &key;
+    RsaToolbox::Keys &keys;
 };
 
 

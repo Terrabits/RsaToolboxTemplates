@@ -5,9 +5,9 @@
 #include "mainwindow.h"
 
 // RsaToolbox
+#include "Keys.h"
 #include "Log.h"
 #include "Vna.h"
-#include "Key.h"
 using namespace RsaToolbox;
 
 // Qt
@@ -22,19 +22,19 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    Log log(LOG_PATH, LOG_FILENAME, APP_NAME, APP_VERSION);
-    log.printApplicationHeader();
+    Log log(LOG_FILENAME, APP_NAME, APP_VERSION);
+    log.printHeader();
     
     Vna vna(CONNECTION_TYPE, INSTRUMENT_ADDRESS);
     vna.useLog(&log);
     vna.printInfo();
     
-    Key key(KEY_PATH);
+    Keys keys(KEY_PATH);
 
     if (isNoConnection(vna) || isUnknownModel(vna))
         return(0);
 
-    MainWindow w(vna, key);
+    MainWindow w(vna, keys);
     w.setWindowFlags(w.windowFlags() | Qt::MSWindowsFixedSizeDialogHint | Qt::WindowStaysOnTopHint);
     w.show();
     return a.exec();

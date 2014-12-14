@@ -6,7 +6,7 @@
 // RsaToolbox
 #include "Log.h"
 #include "Vna.h"
-#include "Key.h"
+#include "Keys.h"
 using namespace RsaToolbox;
 
 // Qt
@@ -17,21 +17,22 @@ using namespace RsaToolbox;
 
 bool isNoConnection(Vna &vna);
 bool isUnknownModel(Vna &vna);
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    Log log(LOG_PATH, LOG_FILENAME, APP_NAME, APP_VERSION);
-    log.printApplicationHeader();
+    Log log(LOG_FILENAME, APP_NAME, APP_VERSION);
+    log.printHeader();
     
     Vna vna(CONNECTION_TYPE, INSTRUMENT_ADDRESS);
     vna.useLog(&log);
     vna.printInfo();
     
-    Key key(KEY_PATH);
+    Keys keys(KEY_PATH);
 
     if (isNoConnection(vna) || isUnknownModel(vna))
-        return(0);
+        return 0;
 
     
     //////////////////////////////////////
@@ -41,7 +42,7 @@ int main(int argc, char *argv[])
     //////////////////////////////////////
 
 
-    return(0);
+    return 0;
 }
 
 
@@ -53,10 +54,10 @@ bool isNoConnection(Vna &vna) {
                               "%APPLICATION_NAME%",
                               error_message);
         vna.print(error_message);
-        return(true);
+        return true;
     }
     else
-        return(false);
+        return false;
 }
 bool isUnknownModel(Vna &vna) {
     if (vna.properties().isUnknownModel()) {
@@ -66,8 +67,8 @@ bool isUnknownModel(Vna &vna) {
                               "%APPLICATION_NAME%",
                               error_message);
         vna.print(error_message);
-        return(true);
+        return true;
     }
     else
-        return(false);
+        return false;
 }
