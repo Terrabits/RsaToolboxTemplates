@@ -14,7 +14,7 @@ using namespace RsaToolbox;
 
 MainWindow::MainWindow(Vna &vna, Keys &keys, QWidget *parent) : 
     vna(vna), keys(keys),
-    QMainWindow(parent), ui(new Ui::MainWindow)
+    QMainWindow(parent), ui(new ::Ui::MainWindow)
 {
     ui->setupUi(this);
     QString title = APP_NAME + " " + APP_VERSION;

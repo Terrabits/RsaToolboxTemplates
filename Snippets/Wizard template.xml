@@ -1,76 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 /****************************************************************************
-**
-** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
-** Contact: http://www.qt-project.org/legal
-**
-** This file is part of Qt Creator.
-**
-** Commercial License Usage
-** Licensees holding valid commercial Qt licenses may use this file in
-** accordance with the commercial license agreement provided with the
-** Software or, alternatively, in accordance with the terms contained in
-** a written agreement between you and Digia.  For licensing terms and
-** conditions see http://qt.digia.com/licensing.  For further information
-** use the contact form at http://qt.digia.com/contact-us.
-**
-** GNU Lesser General Public License Usage
-** Alternatively, this file may be used under the terms of the GNU Lesser
-** General Public License version 2.1 as published by the Free Software
-** Foundation and appearing in the file LICENSE.LGPL included in the
-** packaging of this file.  Please review the following information to
-** ensure the GNU Lesser General Public License version 2.1 requirements
-** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
-**
-** In addition, as a special exception, Digia gives you certain additional
-** rights.  These rights are described in the Digia Qt LGPL Exception
-** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
-**
+** 
+** RsaToolbox
+** Qt Creator Project Template
+** 
+** Nick Lalic
+** VNA Software Developer
+** Cupertino, CA
+** nick.lalic@rsa.rohde-schwarz.com
+** +1 424 200 2846
+** 
+** Copyright (C) 2015 Rohde & Schwarz America
 ****************************************************************************/
-
 -->
-<wizard version="1" kind="project"
-    class="qmakeproject" firstpage="10"
-    id="A.TEMPLATE_NAME" category="B.Rohde-Schwarz">
+
+<wizard version="1" kind="project" class="qmakeproject" firstpage="10" id="A.VnaApp" category="B.Rohde-Schwarz">
     <icon>RS.png</icon>
-    <description>_DESCRIPTION_</description>
-    <displayname>_NAME_</displayname>;
+    <displayname>Display Name</displayname>;
     <displaycategory>Rohde &amp; Schwarz America</displaycategory>
+    <description>Description</description>
     <files>
+        <!-- RsaToolbox -->
+
+        <!-- Project source -->
       
-      <!-- RsaToolbox Files Snippet -->
-
-
-      <!-- Project source -->
-      <file source="Keys/Debug keys go here" target="Keys/Debug keys go here" openeditor="false" binary="true" />
-      <file source="DEBUG_LOGFILE.txt" openeditor="false" />
-      <file source="Settings.h" openeditor="false" />
-      <file source="main.cpp" openeditor="false" />
-      <file source="MeasureThread.h" openeditor="false" />
-      <file source="MeasureThread.cpp" openeditor="false" />
-      <file source="mainwindow.ui" openeditor="true" />
-      <file source="mainwindow.h" openeditor="false" />
-      <file source="mainwindow.cpp" openeditor="false" />
-      <file source="project.pro" target="%ProjectName%.pro" openproject="true" />
-  </files>
-  <!-- Create a 2nd wizard page with parameters -->
-  <fieldpagetitle>RsaToolbox Settings</fieldpagetitle>
-  <fields>
-    <field mandatory="true" name="APPLICATION_NAME">
-        <fieldcontrol class="QLineEdit" validator='^[^"]+$'
-          defaulttext="My App" />
-          <fielddescription>Application Name:</fielddescription>
-      </field>
-      <field mandatory="true" name="APP_FOLDER">
-        <fieldcontrol class="QLineEdit" validator='^[^"]+$'
-          defaulttext="My App" />
-          <fielddescription>Installation folder name:</fielddescription>
-      </field>
-      <field mandatory="true" name="LOG_FILENAME">
-        <fieldcontrol class="QLineEdit" validator='^[^"]+$'
-          defaulttext="My App Log.txt" />
-          <fielddescription>Log filename:</fielddescription>
-      </field>
-  </fields>
+    </files>
+    
+    <!-- Create a 2nd wizard page with parameters -->
+    <fieldpagetitle>RsaToolbox Settings</fieldpagetitle>
+    <fields>
+        <field mandatory="true" name="APPLICATION_NAME">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$' defaulttext="My RSA App" />
+            <fielddescription>Application Name:</fielddescription>
+        </field>
+        <field mandatory="true" name="APP_FOLDER">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$' defaulttext="My RSA App" />
+            <fielddescription>Installation folder name:</fielddescription>
+        </field>
+        <field mandatory="true" name="LOG_FILENAME">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$' defaulttext="My RSA App Log.txt" />
+            <fielddescription>Log filename:</fielddescription>
+        </field>
+    </fields>
 </wizard>

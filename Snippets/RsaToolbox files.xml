@@ -154,6 +154,8 @@
 <file source="RsaToolbox/Instruments/Vna/VnaProperties.cpp" target="RsaToolbox/Instruments/Vna/VnaProperties.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaReferenceMarker.h" target="RsaToolbox/Instruments/Vna/VnaReferenceMarker.h" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaReferenceMarker.cpp" target="RsaToolbox/Instruments/Vna/VnaReferenceMarker.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/VnaScpi.h" target="RsaToolbox/Instruments/Vna/VnaScpi.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/VnaScpi.cpp" target="RsaToolbox/Instruments/Vna/VnaScpi.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaSettings.h" target="RsaToolbox/Instruments/Vna/VnaSettings.h" openeditor="false" />
@@ -175,9 +177,9 @@
 
 <!-- RsaToolbox::Vna/Dialogs -->
 <file source="RsaToolbox/Instruments/Vna/Dialogs/vnadialogs.pri" target="RsaToolbox/Instruments/Vna/Dialogs/vnadialogs.pri" openeditor="false" />
-<file source="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.h" target="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.h" openeditor="false" />
-<file source="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.cpp" target="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.cpp" openeditor="false" />
-<file source="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.ui" target="RsaToolbox/Instruments/Vna/Dialogs/CalDialog/CalDialog.ui" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Dialogs/getCalGroupDialog/getCalGroupDialog.h" target="RsaToolbox/Instruments/Vna/Dialogs/getCalGroupDialog/getCalGroupDialog.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Dialogs/getCalGroupDialog/getCalGroupDialog.cpp" target="RsaToolbox/Instruments/Vna/Dialogs/getCalGroupDialog/getCalGroupDialog.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/Dialogs/getCalGroupDialog/getCalGroupDialog.ui" target="RsaToolbox/Instruments/Vna/Dialogs/getCalGroupDialog/getCalGroupDialog.ui" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog/getChannelDialog.h" target="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog/getChannelDialog.h" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog/getChannelDialog.cpp" target="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog/getChannelDialog.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog/getChannelDialog.ui" target="RsaToolbox/Instruments/Vna/Dialogs/getChannelDialog/getChannelDialog.ui" openeditor="false" />

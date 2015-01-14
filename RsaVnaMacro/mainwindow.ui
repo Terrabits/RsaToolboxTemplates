@@ -9,7 +9,7 @@
     <height>567</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>%APPLICATION_NAME%</string>
   </property>
   <property name="windowIcon">

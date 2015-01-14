@@ -14,7 +14,7 @@ using namespace RsaToolbox;
 
 MainWindow::MainWindow(Log &log, Key &key, QWidget *parent) :
     log(log), key(key),
-    QMainWindow(parent), ui(new Ui::MainWindow)
+    QMainWindow(parent), ui(new ::Ui::MainWindow)
 {
     ui->setupUi(this);
     vna.reset(new Vna());
