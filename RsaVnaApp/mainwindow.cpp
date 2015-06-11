@@ -12,8 +12,8 @@ using namespace RsaToolbox;
 #include <QMessageBox>
 
 
-MainWindow::MainWindow(Log &log, Key &key, QWidget *parent) :
-    log(log), key(key),
+MainWindow::MainWindow(Log &log, Keys &keys, QWidget *parent) :
+    log(log), keys(keys),
     QMainWindow(parent), ui(new ::Ui::MainWindow)
 {
     ui->setupUi(this);

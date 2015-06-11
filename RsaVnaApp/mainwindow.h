@@ -7,7 +7,7 @@
 
 // RsaToolbox
 #include "Log.h"
-#include "Key.h"
+#include "Keys.h"
 #include "Vna.h"
 
 // Qt
@@ -24,7 +24,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
     
 public:
-    explicit MainWindow(RsaToolbox::Log &log, RsaToolbox::Key &key, QWidget *parent = 0);
+    explicit MainWindow(RsaToolbox::Log &log, RsaToolbox::Keys &keys, QWidget *parent = 0);
     ~MainWindow();
 
 public slots:
@@ -38,7 +38,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     RsaToolbox::Log &log;
-    RsaToolbox::Key &key;
+    RsaToolbox::Keys &keys;
     QScopedPointer<RsaToolbox::Vna> vna;
     QScopedPointer<MeasureThread> measure;
 

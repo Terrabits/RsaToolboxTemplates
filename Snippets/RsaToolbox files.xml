@@ -158,6 +158,8 @@
 <file source="RsaToolbox/Instruments/Vna/VnaScpi.cpp" target="RsaToolbox/Instruments/Vna/VnaScpi.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/VnaSet.h" target="RsaToolbox/Instruments/Vna/VnaSet.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/VnaSet.cpp" target="RsaToolbox/Instruments/Vna/VnaSet.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaSettings.h" target="RsaToolbox/Instruments/Vna/VnaSettings.h" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaSettings.cpp" target="RsaToolbox/Instruments/Vna/VnaSettings.cpp" openeditor="false" />
 <file source="RsaToolbox/Instruments/Vna/VnaStandardModel.h" target="RsaToolbox/Instruments/Vna/VnaStandardModel.h" openeditor="false" />

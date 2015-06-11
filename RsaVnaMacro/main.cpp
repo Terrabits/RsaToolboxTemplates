@@ -42,28 +42,27 @@ int main(int argc, char *argv[])
 
 
 bool isNoConnection(Vna &vna) {
-    if (vna.isDisconnected()) {
-        QString error_message
-            = "Instrument not found. Please run this application on a Rohde & Schwarz VNA.";
-        QMessageBox::critical(NULL,
-                              "%APPLICATION_NAME%",
-                              error_message);
-        vna.print(error_message);
-        return(true);
-    }
-    else
-        return(false);
+    if (vna.isConnected() && !vna.idString().isEmpty())
+        return false;
+    
+    QString msg = "Instrument not found.\n";
+    msg += "Please run this application on the instrument.";
+    QMessageBox::critical(NULL,
+                          APP_NAME,
+                          msg);
+    vna.print(msg);
+    return true;
 }
 bool isUnknownModel(Vna &vna) {
-    if (vna.properties().isUnknownModel()) {
-        QString error_message(QString("VNA not recognized.\n")
-                            + "Please use %APPLICATION_NAME% with a Rohde & Schwarz instrument");
-        QMessageBox::critical(NULL,
-                              "%APPLICATION_NAME%",
-                              error_message);
-        vna.print(error_message);
-        return(true);
-    }
-    else
-        return(false);
+    if (vna.properties().isKnownModel())
+        return false;
+
+    QString msg = "Instrument not recognized.\n";
+    msg += "Please use %1 with a Rohde & Schwarz VNA";
+    msg = msg.arg(APP_NAME);
+    QMessageBox::critical(NULL,
+                          APP_NAME,
+                          msg);
+    vna.print(msg);
+    return true;
 }

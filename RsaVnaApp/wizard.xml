@@ -179,6 +179,8 @@
         <file source="RsaToolbox/Instruments/Vna/VnaScpi.cpp" target="RsaToolbox/Instruments/Vna/VnaScpi.cpp" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" openeditor="false" />
+        <file source="RsaToolbox/Instruments/Vna/VnaSet.h" target="RsaToolbox/Instruments/Vna/VnaSet.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/VnaSet.cpp" target="RsaToolbox/Instruments/Vna/VnaSet.cpp" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSettings.h" target="RsaToolbox/Instruments/Vna/VnaSettings.h" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSettings.cpp" target="RsaToolbox/Instruments/Vna/VnaSettings.cpp" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaStandardModel.h" target="RsaToolbox/Instruments/Vna/VnaStandardModel.h" openeditor="false" />
@@ -300,12 +302,12 @@
         <file source="Keys/Debug keys go here" target="Keys/Debug keys go here" openeditor="false" binary="true" />
         <file source="DEBUG_LOGFILE.txt" openeditor="false" />
         <file source="Settings.h" openeditor="true" />
-        <file source="main.cpp" openeditor="true" />
-        <file source="MeasureThread.h" openeditor="true" />
-        <file source="MeasureThread.cpp" openeditor="true" />
+        <file source="main.cpp" />
+        <file source="MeasureThread.h" />
+        <file source="MeasureThread.cpp" />
+        <file source="mainwindow.h" />
+        <file source="mainwindow.cpp" />
         <file source="mainwindow.ui" openeditor="true" />
-        <file source="mainwindow.h" openeditor="true" />
-        <file source="mainwindow.cpp" openeditor="true" />
         <file source="project.pro" target="%ProjectName%.pro" openproject="true" />
     </files>
     

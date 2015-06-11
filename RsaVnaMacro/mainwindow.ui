@@ -10,7 +10,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>%APPLICATION_NAME%</string>
+   <string>MainWindow</string>
   </property>
   <property name="windowIcon">
    <iconset resource="Resources.qrc">

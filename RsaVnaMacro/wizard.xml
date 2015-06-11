@@ -179,6 +179,8 @@
         <file source="RsaToolbox/Instruments/Vna/VnaScpi.cpp" target="RsaToolbox/Instruments/Vna/VnaScpi.cpp" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.h" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" target="RsaToolbox/Instruments/Vna/VnaSegmentedSweep.cpp" openeditor="false" />
+        <file source="RsaToolbox/Instruments/Vna/VnaSet.h" target="RsaToolbox/Instruments/Vna/VnaSet.h" openeditor="false" />
+<file source="RsaToolbox/Instruments/Vna/VnaSet.cpp" target="RsaToolbox/Instruments/Vna/VnaSet.cpp" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSettings.h" target="RsaToolbox/Instruments/Vna/VnaSettings.h" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaSettings.cpp" target="RsaToolbox/Instruments/Vna/VnaSettings.cpp" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/VnaStandardModel.h" target="RsaToolbox/Instruments/Vna/VnaStandardModel.h" openeditor="false" />
@@ -297,14 +299,14 @@
         <file source="Installer/Keys/Installer Keys go here" target="Installer/Keys/Installer keys go here" openeditor="false" />
 
         <!-- Project source -->
-        <file source="./Keys/Debug keys go here" target="./Keys/Debug keys go here" openeditor="false" binary="true" />
-        <file source="DEBUG_LOGFILE.txt" openeditor="false" />
-        <file source="Settings.h" openeditor="true" />
-        <file source="main.cpp" openeditor="true" />
+        <file source="./Keys/Debug keys go here" target="./Keys/Debug keys go here" binary="true" />
+        <file source="DEBUG_LOGFILE.txt" />
+        <file source="Settings.h" />
+        <file source="main.cpp" />
         <file source="mainwindow.ui" openeditor="true" />
-        <file source="mainwindow.h" openeditor="true" />
-        <file source="mainwindow.cpp" openeditor="true" />
-        <file source="project.pro" target="%ProjectName%.pro" openproject="true" />
+        <file source="mainwindow.h" />
+        <file source="mainwindow.cpp" />
+        <file source="project.pro" target="%ProjectName%.pro" />
     </files>
 
     <!-- Create a 2nd wizard page with parameters -->
