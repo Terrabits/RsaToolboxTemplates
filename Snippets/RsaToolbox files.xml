@@ -61,6 +61,9 @@
 <file source="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.h" target="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.h" openeditor="false" />
 <file source="RsaToolbox/Gui/ErrorLabel/ErrorLabel.cpp" target="RsaToolbox/Gui/ErrorLabel/ErrorLabel.cpp" openeditor="false" />
 <file source="RsaToolbox/Gui/ErrorLabel/ErrorLabel.h" target="RsaToolbox/Gui/ErrorLabel/ErrorLabel.h" openeditor="false" />
+<file source="RsaToolbox/Gui/Figure/Figure.h" target="RsaToolbox/Gui/Figure/Figure.h" openeditor="false" />
+<file source="RsaToolbox/Gui/Figure/Figure.cpp" target="RsaToolbox/Gui/Figure/Figure.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/Figure/Figure.ui" target="RsaToolbox/Gui/Figure/Figure.ui" openeditor="false" />
 <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" openeditor="false" />
 <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" openeditor="false" />
 <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" openeditor="false" />
@@ -212,9 +215,6 @@
 <file source="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.ui" target="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.ui" openeditor="false" />
 
 <!-- QCustomPlot -->
-<file source="RsaToolbox/QCustomPlot/Figure/Figure.h" target="RsaToolbox/QCustomPlot/Figure/Figure.h" openeditor="false" />
-<file source="RsaToolbox/QCustomPlot/Figure/Figure.cpp" target="RsaToolbox/QCustomPlot/Figure/Figure.cpp" openeditor="false" />
-<file source="RsaToolbox/QCustomPlot/Figure/Figure.ui" target="RsaToolbox/QCustomPlot/Figure/Figure.ui" openeditor="false" />
 <file source="RsaToolbox/QCustomPlot/qcustomplot.pri" target="RsaToolbox/QCustomPlot/qcustomplot.pri" openeditor="false" />
 <file source="RsaToolbox/QCustomPlot/qcustomplot.pro" target="RsaToolbox/QCustomPlot/qcustomplot.pro" openeditor="false" />
 <file source="RsaToolbox/QCustomPlot/qcustomplot.h" target="RsaToolbox/QCustomPlot/qcustomplot.h" openeditor="false" />
