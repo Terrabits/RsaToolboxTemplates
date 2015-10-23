@@ -238,6 +238,11 @@
         <file source="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.cpp" target="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.cpp" openeditor="false" />
         <file source="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.ui" target="RsaToolbox/Instruments/Vna/Views/CalGroupPanel/CalGroupPanel.ui" openeditor="false" />
 
+        <!-- RsaToolbox::Test -->
+        <file source="RsaToolbox/Test/test.pri" target="RsaToolbox/Test/test.pri" openeditor="false" />
+        <file source="RsaToolbox/Test/TestRunner.h" target="RsaToolbox/Test/TestRunner.h" openeditor="false" />
+        <file source="RsaToolbox/Test/TestRunner.cpp" target="RsaToolbox/Test/TestRunner.cpp" openeditor="false" />
+
         <!-- QCustomPlot -->
         <file source="RsaToolbox/QCustomPlot/qcustomplot.pri" target="RsaToolbox/QCustomPlot/qcustomplot.pri" openeditor="false" />
         <file source="RsaToolbox/QCustomPlot/qcustomplot.pro" target="RsaToolbox/QCustomPlot/qcustomplot.pro" openeditor="false" />
