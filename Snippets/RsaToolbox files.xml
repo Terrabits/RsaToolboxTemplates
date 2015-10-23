@@ -64,6 +64,9 @@
 <file source="RsaToolbox/Gui/Figure/Figure.h" target="RsaToolbox/Gui/Figure/Figure.h" openeditor="false" />
 <file source="RsaToolbox/Gui/Figure/Figure.cpp" target="RsaToolbox/Gui/Figure/Figure.cpp" openeditor="false" />
 <file source="RsaToolbox/Gui/Figure/Figure.ui" target="RsaToolbox/Gui/Figure/Figure.ui" openeditor="false" />
+<file source="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.h" target="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.h" openeditor="false" />
+<file source="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.cpp" target="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.cpp" openeditor="false" />
+<file source="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.ui" target="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.ui" openeditor="false" />
 <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" openeditor="false" />
 <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" openeditor="false" />
 <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" openeditor="false" />
