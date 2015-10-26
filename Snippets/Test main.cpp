@@ -1,11 +1,12 @@
 
 
-// RsaToolbox
-#include "TestRunner.h"
-
 // Tests
 //#include "Test1.h"
 //#include "Test2.h"
+
+// RsaToolbox
+#include "TestRunner.h"
+using namespace RsaToolbox;
 
 // Qt
 #include <QDebug>
