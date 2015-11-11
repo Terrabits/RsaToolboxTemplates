@@ -78,10 +78,15 @@
 
         <!-- RsaToolbox::Gui -->
         <file source="RsaToolbox/Gui/gui.pri" target="RsaToolbox/Gui/gui.pri" openeditor="false" />
+        <file source="RsaToolbox/Gui/About/About.h" target="RsaToolbox/Gui/About/About.h" openeditor="false" />
+        <file source="RsaToolbox/Gui/About/About.cpp" target="RsaToolbox/Gui/About/About.cpp" openeditor="false" />
+        <file source="RsaToolbox/Gui/About/About.ui" target="RsaToolbox/Gui/About/About.ui" openeditor="false" />
         <file source="RsaToolbox/Gui/ConnectButton/ConnectButton.cpp" target="RsaToolbox/Gui/ConnectButton/ConnectButton.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/ConnectButton/ConnectButton.h" target="RsaToolbox/Gui/ConnectButton/ConnectButton.h" openeditor="false" />
         <file source="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.cpp" target="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.h" target="RsaToolbox/Gui/ConnectionTypeComboBox/ConnectionTypeComboBox.h" openeditor="false" />
+        <file source="RsaToolbox/Gui/DecibelEdit/DecibelEdit.h" target="RsaToolbox/Gui/DecibelEdit/DecibelEdit.h" openeditor="false" />
+        <file source="RsaToolbox/Gui/DecibelEdit/DecibelEdit.cpp" target="RsaToolbox/Gui/DecibelEdit/DecibelEdit.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/ErrorLabel/ErrorLabel.cpp" target="RsaToolbox/Gui/ErrorLabel/ErrorLabel.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/ErrorLabel/ErrorLabel.h" target="RsaToolbox/Gui/ErrorLabel/ErrorLabel.h" openeditor="false" />
         <file source="RsaToolbox/Gui/Figure/Figure.h" target="RsaToolbox/Gui/Figure/Figure.h" openeditor="false" />
@@ -89,7 +94,6 @@
         <file source="RsaToolbox/Gui/Figure/Figure.ui" target="RsaToolbox/Gui/Figure/Figure.ui" openeditor="false" />
         <file source="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.h" target="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.h" openeditor="false" />
         <file source="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.cpp" target="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.cpp" openeditor="false" />
-        <file source="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.ui" target="RsaToolbox/Gui/FrequencyEdit/FrequencyEdit.ui" openeditor="false" />
         <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.h" openeditor="false" />
         <file source="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" target="RsaToolbox/Gui/GetSnpFile/GetSnpFile.ui" openeditor="false" />
@@ -98,8 +102,15 @@
         <file source="RsaToolbox/Gui/ListPanel/ListPanel.cpp" target="RsaToolbox/Gui/ListPanel/ListPanel.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/ListPanel/ListPanel.h" target="RsaToolbox/Gui/ListPanel/ListPanel.h" openeditor="false" />
         <file source="RsaToolbox/Gui/ListPanel/ListPanel.ui" target="RsaToolbox/Gui/ListPanel/ListPanel.ui" openeditor="false" />
+        <file source="RsaToolbox/Gui/PointsEdit/PointsEdit.h" target="RsaToolbox/Gui/PointsEdit/PointsEdit.h" openeditor="false" />
+        <file source="RsaToolbox/Gui/PointsEdit/PointsEdit.cpp" target="RsaToolbox/Gui/PointsEdit/PointsEdit.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.cpp" target="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.h" target="RsaToolbox/Gui/PortsLineEdit/PortsLineEdit.h" openeditor="false" />
+        <file source="RsaToolbox/Gui/PowerEdit/PowerEdit.h" target="RsaToolbox/Gui/PowerEdit/PowerEdit.h" openeditor="false" />
+        <file source="RsaToolbox/Gui/PowerEdit/PowerEdit.cpp" target="RsaToolbox/Gui/PowerEdit/PowerEdit.cpp" openeditor="false" />
+        <file source="RsaToolbox/Gui/Update/Update.h" target="RsaToolbox/Gui/Update/Update.h" openeditor="false" />
+        <file source="RsaToolbox/Gui/Update/Update.cpp" target="RsaToolbox/Gui/Update/Update.cpp" openeditor="false" />
+        <file source="RsaToolbox/Gui/Update/Update.ui" target="RsaToolbox/Gui/Update/Update.ui" openeditor="false" />
         <file source="RsaToolbox/Gui/Wizard/BreadCrumbs.cpp" target="RsaToolbox/Gui/Wizard/BreadCrumbs.cpp" openeditor="false" />
         <file source="RsaToolbox/Gui/Wizard/BreadCrumbs.h" target="RsaToolbox/Gui/Wizard/BreadCrumbs.h" openeditor="false" />
         <file source="RsaToolbox/Gui/Wizard/BreadCrumbs.ui" target="RsaToolbox/Gui/Wizard/BreadCrumbs.ui" openeditor="false" />
