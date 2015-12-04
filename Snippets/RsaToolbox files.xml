@@ -242,7 +242,7 @@
 <file source="RsaToolbox/QCustomPlot/qcustomplotd.pdb" target="RsaToolbox/QCustomPlot/qcustomplotd.pdb" openeditor="false" binary="true" />
 <file source="RsaToolbox/QCustomPlot/qcustomplot.dll" target="RsaToolbox/QCustomPlot/qcustomplot.dll" openeditor="false" binary="true" />
 <file source="RsaToolbox/QCustomPlot/qcustomplotd.dll" target="RsaToolbox/QCustomPlot/qcustomplotd.dll" openeditor="false" binary="true" />
-<file source="RsaToolbox/QCustomPlot/readme.txt" target="RsaToolbox/QCustomPlot/readme.txt" openeditor="false" />
+<file source="RsaToolbox/QCustomPlot/changelog.txt" target="RsaToolbox/QCustomPlot/changelog.txt" openeditor="false" />
 <file source="RsaToolbox/QCustomPlot/LICENSE.txt" target="RsaToolbox/QCustomPlot/LICENSE.txt" openeditor="false" />
 
 <!-- QuaZIP -->
