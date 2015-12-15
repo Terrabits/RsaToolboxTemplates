@@ -253,8 +253,10 @@
 
         <!-- RsaToolbox::Test -->
         <file source="RsaToolbox/Test/test.pri" target="RsaToolbox/Test/test.pri" openeditor="false" />
-        <file source="RsaToolbox/Test/TestRunner.h" target="RsaToolbox/Test/TestRunner.h" openeditor="false" />
-        <file source="RsaToolbox/Test/TestRunner.cpp" target="RsaToolbox/Test/TestRunner.cpp" openeditor="false" />
+        <file source="RsaToolbox/Test/TestRunner/TestRunner.h" target="RsaToolbox/Test/TestRunner/TestRunner.h" openeditor="false" />
+        <file source="RsaToolbox/Test/TestRunner/TestRunner.cpp" target="RsaToolbox/Test/TestRunner/TestRunner.cpp" openeditor="false" />
+        <file source="RsaToolbox/Test/SpeedTracker/SpeedTracker.h" target="RsaToolbox/Test/SpeedTracker/SpeedTracker.h" openeditor="false" />
+        <file source="RsaToolbox/Test/SpeedTracker/SpeedTracker.cpp" target="RsaToolbox/Test/SpeedTracker/SpeedTracker.cpp" openeditor="false" />
 
         <!-- QCustomPlot -->
         <file source="RsaToolbox/QCustomPlot/qcustomplot.pri" target="RsaToolbox/QCustomPlot/qcustomplot.pri" openeditor="false" />
